@@ -5,6 +5,7 @@ from datetime import datetime, timedelta
 import getpass
 import sys
 from prettytable import PrettyTable
+from config_bd import obtener_config_bd
 
 
 class CineManager:
@@ -29,11 +30,13 @@ class CineManager:
     def conectar_bd(self):
         """Inicializa la conexión con la base de datos"""
         try:
+            config = obtener_config_bd()
             self.conn = mysql.connector.connect(
-                host="localhost",
-                user="root",
-                password="123456",
-                database="cine"
+                host=config["host"],
+                user=config["user"],
+                password=config["password"],
+                port=config["port"],
+                database=config["database"]
             )
             self.cursor = self.conn.cursor(dictionary=True)
         except mysql.connector.Error as err:

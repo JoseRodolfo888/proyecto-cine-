@@ -1,0 +1,629 @@
+irm https://awscli.amazonaws.com/v2/install.ps1 | iex                                           Installing AWS CLI 2.42.4                                                                                               Downloading AWS CLI installer from https://awscli.amazonaws.com/AWSCLIV2-User-2.42.4.msi?src=script-exe                 MSI Authenticode signature verified (signed by AWS).
+Running MSI installer...
+AWS CLI 2.42.4 installed to C:\Users\crais\AppData\Local\Programs\Amazon\AWSCLIV2
+When multiple installs exist, PATH order determines which 'aws' runs.
+PS C:\WINDOWS\system32> irm 'https://awscli.amazonaws.com/v2/install.ps1' -OutFile install.ps1; try { .\install.ps1 -System } finally { Remove-Item install.ps1 }
+Installing AWS CLI 2.42.4
+Downloading AWS CLI installer from https://awscli.amazonaws.com/AWSCLIV2-2.42.4.msi?src=script-exe
+MSI Authenticode signature verified (signed by AWS).
+Running MSI installer...
+AWS CLI 2.42.4 installed to C:\Program Files\Amazon\AWSCLIV2
+When multiple installs exist, PATH order determines which 'aws' runs.
+PS C:\WINDOWS\system32> irm 'https://awscli.amazonaws.com/v2/install.ps1' -OutFile install.ps1; try { .\install.ps1 -Help } finally { Remove-Item install.ps1 }
+Usage: install.ps1 [-Version <X.Y.Z>] [-System] [-Quiet]
+                   [-SkipSignatureVerification] [-Help]
+
+Install or update the AWS CLI v2.
+
+Parameters:
+  -Version <X.Y.Z>  Install a specific fully-qualified version. Otherwise
+                    installs the latest release. Downgrades are not
+                    supported. To install a previous version, see:
+                    https://docs.aws.amazon.com/cli/latest/userguide/getting-started-version.html
+  -System           Install system-wide (requires admin). Otherwise installs
+                    under %LOCALAPPDATA%\Programs\Amazon\AWSCLIV2\.
+  -Quiet            Suppress non-essential output. Errors and warnings are
+                    still printed to stderr.
+  -SkipSignatureVerification
+                    Skip signature verification of the downloaded installer.
+                    NOT RECOMMENDED: this disables a security control that
+                    confirms the installer is authentic. Only use it if you
+                    understand and accept the risk. The
+                    AWS_CLI_INSTALL_SKIP_SIGNATURE_VERIFICATION env var
+                    (below) does the same.
+  -Help             Show this help and exit.
+
+Environment:
+  AWS_CLI_INSTALL_SKIP_SIGNATURE_VERIFICATION
+                    Set to "true" (case-insensitive) to skip signature
+                    verification, equivalent to the
+                    -SkipSignatureVerification switch. Provided so callers
+                    that cannot pass the switch (e.g. an older AWS CLI running
+                    'aws update') can still opt out. NOT RECOMMENDED.
+PS C:\WINDOWS\system32> aws update
+
+PS C:\WINDOWS\system32> aws update
+Updating AWS CLI (source: script-exe)
+Downloading https://awscli.amazonaws.com/v2/install.ps1
+Install script signature verified.
+Update started. This process will exit and the update will complete shortly.
+
+Tip: run 'aws configure agent-toolkit' to set up AWS skills and the AWS MCP server for your AI coding agent(s).
+PS C:\WINDOWS\system32>
+
+
+PS C:\Users\crais\OneDrive\Escritorio\proyecto cine> git status
+git : El término 'git' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable. Compruebe 
+si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e inténtelo de 
+nuevo.
+En línea: 1 Carácter: 1
++ git status
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\crais\OneDrive\Escritorio\proyecto cine> 
+ *  History restored 
+
+PS C:\Users\crais\OneDrive\Escritorio\proyecto cine> git status 
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   proyecto cine.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .env.example
+        .gitignore
+        config_bd.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\crais\OneDrive\Escritorio\proyecto cine> git add .gitignore .env.example config_bd.py "proyecto cine.py"
+PS C:\Users\crais\OneDrive\Escritorio\proyecto cine> git commit -m "Configurar conexion a BD mediante variables de entorno"
+[main d02dd96] Configurar conexion a BD mediante variables de entorno
+ 4 files changed, 50 insertions(+), 4 deletions(-)
+ create mode 100644 .env.example
+ create mode 100644 .gitignore
+ create mode 100644 config_bd.py
+PS C:\Users\crais\OneDrive\Escritorio\proyecto cine> git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1.25 KiB | 320.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/JoseRodolfo888/proyecto-cine-.git
+   3951ab3..d02dd96  main -> main
+PS C:\Users\crais\OneDrive\Escritorio\proyecto cine> aws --version
+aws : El término 'aws' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable. Compruebe 
+si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e inténtelo de 
+nuevo.
+En línea: 1 Carácter: 1
++ aws --version
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (aws:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\crais\OneDrive\Escritorio\proyecto cine> aws --version
+aws : El término 'aws' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable. Compruebe 
+si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e inténtelo de 
+nuevo.
+En línea: 1 Carácter: 1
++ aws --version
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (aws:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\crais\OneDrive\Escritorio\proyecto cine> 
+ *  History restored 
+
+PS C:\Users\crais\OneDrive\Escritorio\proyecto cine> aws --version 
+aws-cli/2.42.4 Python/3.14.10 Windows/11 script-exe/AMD64
+PS C:\Users\crais\OneDrive\Escritorio\proyecto cine> aws configure
+
+Tip: You can deliver temporary credentials to the AWS CLI using your AWS Console session by running the command 'aws login'.
+
+AWS Access Key ID [None]: ASIASCK3VQE5OQ6JA2X3
+AWS Secret Access Key [None]: iZxaWhKNrJLRfM2VldzeZQqMDriohgNMAowGJOB+
+AWS Session Token [None]: IQoJb3JpZ2luX2VjEOX//////////wEaCXVzLXdlc3QtMiJIMEYCIQCzZkBQyRASnkp5S+pqqmAilwJ8vNZSWrKONI8b/lfNoAIhALquTyuv8M5rJeg2nwscj6M5hEVqR185LO+lrJw7FyyLKsICCK7//////////wEQARoMMTQyNDYzMDQxODUwIgxsREjZ8gi5nhmzN3sqlgLimS8q3UyXPaznpXv0AIXNBy4td+LC+huR9G8sibzHqQ/glXgBVZ33bbTWGvDvA/BGAeDeQdc+2sorw8bnqgrf6tN51w5+1fws7RL0ANQdieG2zd2U663rU0wFbjJfNNKUyVrS2GizuFSEMyqyQgxVTgWl/ThguwTMG6QR6jf+2/GCThrgPqZdOt5hanLJj/uNJucoOg6WuXzqCYmyuZ/JmSOnLEMigiEKBkcdDE7/dn183DOuIk+1lSKGsT7pWCpW5heGut/Xw7uo5deQo1gDwfx6pfjHskBeP6JDslrOER78vcbIPYXet4r0Mo9YP1CuLLoIixHqfYNZ1D1/wK34O2PQL+d/STo6h9owET6z0GZmeD61YjCtkJ3YBjqcATdp4ZYdAHa3MMsge9U4QPwQrgMYMjrFtP0CHpLAP/FnNIT6h9j2rfyN8uU2Pd01c+WkGO9aJ9tiVDfJpkFmPjb2oW5EFoHy+dS1vUaE2ed8k9bEfHLPU0GqvWQ6CyOw97H3Oj41n/OaWd43Mm4JeYcsDbr/0YBNeIs8gNtKzGaMTGPF3L6GsIT0uxfdasErYEOip+q74sPp2DYK6g==
+Default region name [None]: us-east-1
+Default output format [None]: json
+
+Configure AWS skills and the AWS MCP server for your AI coding agent(s)? [y/n/never]: y
+
+Detecting installed AI coding agents...
+  ✗ Claude Code — ~/.claude/skills (not found)
+  ✗ Cline — ~/.cline/skills (not found)
+  ✗ Codex — ~/.agents/skills (not found)
+  ✗ Cursor — ~/.cursor/skills (not found)
+  ✗ Devin — ~/.agents/skills (not found)
+  ✓ Gemini CLI — C:\Users\crais/.agents/skills/
+  ✗ Kiro — ~/.kiro/skills (not found)
+  ✗ OpenClaw — ~/.openclaw/skills (not found)
+  ✗ OpenCode — ~/.agents/skills (not found)
+  ✗ Pi — ~/.pi/agent/skills (not found)
+  ✗ Windsurf — ~/.agents/skills (not found)
+
+Fetching default AWS skills...
+  Found: amazon-bedrock, aws-ai-ml, aws-auth, aws-billing-and-cost-management, aws-cdk, aws-cdk-blocks, aws-cloudformation, aws-compute, aws-containers, aws-database, aws-deployment, aws-iam, aws-investigation, aws-messaging-and-streaming, aws-networking, aws-observability, aws-sdk-js-v3-usage, aws-sdk-python-usage, aws-sdk-swift-usage, aws-security, aws-serverless, aws-storage, aws-well-architected-review, launch-with-aws, ocr-document-processing-skill, signing-in-to-aws
+
+Install 26 default AWS skills? [Y/n]: Y
+
+Installing 26 default AWS skills...
+  [1/26] amazon-bedrock
+  [2/26] aws-ai-ml
+  [3/26] aws-auth
+  [4/26] aws-billing-and-cost-management
+  [5/26] aws-cdk
+  [6/26] aws-cdk-blocks
+  [7/26] aws-cloudformation
+  [8/26] aws-compute
+  [9/26] aws-containers
+  [10/26] aws-database
+  [11/26] aws-deployment
+  [12/26] aws-iam
+  [13/26] aws-investigation
+  [14/26] aws-messaging-and-streaming
+  [15/26] aws-networking
+  [16/26] aws-observability
+  [17/26] aws-sdk-js-v3-usage
+  [18/26] aws-sdk-python-usage
+  [19/26] aws-sdk-swift-usage
+  [20/26] aws-security
+  [21/26] aws-serverless
+  [22/26] aws-storage
+  [23/26] aws-well-architected-review
+  [24/26] launch-with-aws
+  [25/26] ocr-document-processing-skill
+  [26/26] signing-in-to-aws
+
+Skills installed to:
+  Gemini CLI — C:\Users\crais/.agents/skills/
+
+Configure AWS MCP server connection? [Y/n]: y
+
+AWS MCP server configured for:
+  ✓ Gemini CLI — C:\Users\crais/.gemini/settings.json: updated
+
+Keep AWS skills up to date automatically? When your agent starts, installed AWS skills are updated and new core AWS skills are installed. [Y/n]: y
+
+Automatic skill updates enabled.
+
+Automatic update hooks:
+  ✓ Gemini CLI — C:\Users\crais/.gemini/settings.json: hook installed
+
+You can discover additional skills with 'aws agent-toolkit search-skills --search-query <text>'
+PS C:\Users\crais\OneDrive\Escritorio\proyecto cine> aws sts get-caller-identity
+{                                                                                                                             
+    "UserId": "AROASCK3VQE5DTRI5WRZ6:user4375418=jose.godinez6780@alumnos.udg.mx",
+    "Account": "142463041850",
+    "Arn": "arn:aws:sts::142463041850:assumed-role/voclabs/user4375418=jose.godinez6780@alumnos.udg.mx"
+}
+
+PS C:\Users\crais\OneDrive\Escritorio\proyecto cine> $vpcId = aws ec2 describe-vpcs --filters "Name=is-default,Values=true" --query "Vpcs[0].VpcId" --output text
+>> $miIp = (Invoke-RestMethod -Uri "https://checkip.amazonaws.com").Trim()
+>> Write-Output "VPC: $vpcId | Mi IP: $miIp"
+VPC: vpc-09bb602a1ad5ff64a | Mi IP: 148.202.142.186
+PS C:\Users\crais\OneDrive\Escritorio\proyecto cine> $sgId = aws ec2 create-security-group --group-name cine-mysql-sg --description "Acceso MySQL RDS para proyecto cine" --vpc-id $vpcId --query "GroupId" --output text
+>> aws ec2 authorize-security-group-ingress --group-id $sgId --protocol tcp --port 3306 --cidr "$miIp/32"
+{                                                                                                                             
+    "Return": true,
+    "SecurityGroupRules": [
+        {
+            "SecurityGroupRuleId": "sgr-0a78e350213695974",
+            "GroupId": "sg-0eb1f728943a7c264",
+            "GroupOwnerId": "142463041850",
+            "IsEgress": false,
+            "IpProtocol": "tcp",
+            "FromPort": 3306,
+            "ToPort": 3306,
+            "CidrIpv4": "148.202.142.186/32",
+            "SecurityGroupRuleArn": "arn:aws:ec2:us-east-1:142463041850:security-group-rule/sgr-0a78e350213695974"            
+        }                                                                                                                     
+    ]                                                                                                                         
+}                                                                                                                             
+                                                                                                                              
+PS C:\Users\crais\OneDrive\Escritorio\proyecto cine> aws rds create-db-instance `
+>>   --db-instance-identifier cine-db `
+>>   --db-name cine `
+>>   --engine mysql `
+>>   --db-instance-class db.t3.micro `
+>>   --allocated-storage 20 `
+>>   --master-username admin `
+>>   --master-user-password "CineMagic2026!" `
+>>   --vpc-security-group-ids $sgId `
+>>   --publicly-accessible `
+>>   --backup-retention-period 1
+{                                                                                                                             
+    "DBInstance": {
+        "DBInstanceIdentifier": "cine-db",
+        "DBInstanceClass": "db.t3.micro",
+        "Engine": "mysql",
+        "DBInstanceStatus": "creating",
+        "MasterUsername": "admin",
+        "DBName": "cine",
+        "AllocatedStorage": 20,
+        "PreferredBackupWindow": "08:14-08:44",
+        "BackupRetentionPeriod": 1,
+        "DBSecurityGroups": [],
+        "VpcSecurityGroups": [                                                                                                
+            {                                                                                                                 
+                "VpcSecurityGroupId": "sg-0eb1f728943a7c264",                                                                 
+                "Status": "active"                                                                                            
+            }                                                                                                                 
+        ],                                                                                                                    
+        "DBParameterGroups": [                                                                                                
+            {                                                                                                                 
+                "DBParameterGroupName": "default.mysql8.4",                                                                   
+                "ParameterApplyStatus": "in-sync"                                                                             
+            }                                                                                                                 
+        ],                                                                                                                    
+        "DBSubnetGroup": {                                                                                                    
+            "DBSubnetGroupName": "default",                                                                                   
+            "DBSubnetGroupDescription": "default",                                                                            
+            "VpcId": "vpc-09bb602a1ad5ff64a",                                                                                 
+            "SubnetGroupStatus": "Complete",                                                                                  
+            "Subnets": [                                                                                                      
+                {                                                                                                             
+                    "SubnetIdentifier": "subnet-058caef2c58ac9d7b",                                                           
+                    "SubnetAvailabilityZone": {                                                                               
+                        "Name": "us-east-1c"                                                                                  
+                    },                                                                                                        
+                    "SubnetOutpost": {},                                                                                      
+                    "SubnetStatus": "Active"                                                                                  
+                },                                                                                                            
+                {                                                                                                             
+                    "SubnetIdentifier": "subnet-0f0f1afa9f28c7a73",                                                           
+                    "SubnetAvailabilityZone": {                                                                               
+                        "Name": "us-east-1d"                                                                                  
+                    },                                                                                                        
+                    "SubnetOutpost": {},                                                                                      
+                    "SubnetStatus": "Active"                                                                                  
+                },                                                                                                            
+                {                                                                                                             
+                    "SubnetIdentifier": "subnet-02ab32053a6a601fb",                                                           
+                    "SubnetAvailabilityZone": {                                                                               
+                        "Name": "us-east-1b"                                                                                  
+                    },                                                                                                        
+                    "SubnetOutpost": {},                                                                                      
+                    "SubnetStatus": "Active"                                                                                  
+                },                                                                                                            
+                {                                                                                                             
+                    "SubnetIdentifier": "subnet-0b28ead2915c9284f",                                                           
+                    "SubnetAvailabilityZone": {                                                                               
+                        "Name": "us-east-1a"                                                                                  
+                    },                                                                                                        
+                    "SubnetOutpost": {},                                                                                      
+                    "SubnetStatus": "Active"                                                                                  
+                },                                                                                                            
+                {                                                                                                             
+                    "SubnetIdentifier": "subnet-056313e4f43762b15",                                                           
+                    "SubnetAvailabilityZone": {                                                                               
+                        "Name": "us-east-1e"                                                                                  
+                    },                                                                                                        
+                    "SubnetOutpost": {},                                                                                      
+                    "SubnetStatus": "Active"                                                                                  
+                },                                                                                                            
+                {                                                                                                             
+                    "SubnetIdentifier": "subnet-074e1f596bc573fd0",                                                           
+                    "SubnetAvailabilityZone": {                                                                               
+                        "Name": "us-east-1f"                                                                                  
+                    },                                                                                                        
+                    "SubnetOutpost": {},                                                                                      
+                    "SubnetStatus": "Active"                                                                                  
+                }                                                                                                             
+            ]                                                                                                                 
+        },                                                                                                                    
+        "PreferredMaintenanceWindow": "mon:05:41-mon:06:11",                                                                  
+        "UpgradeRolloutOrder": "second",                                                                                      
+        "PendingModifiedValues": {                                                                                            
+            "MasterUserPassword": "****"                                                                                      
+        },                                                                                                                    
+        "MultiAZ": false,                                                                                                     
+        "EngineVersion": "8.4.11",                                                                                            
+        "AutoMinorVersionUpgrade": true,                                                                                      
+        "ReadReplicaDBInstanceIdentifiers": [],                                                                               
+        "LicenseModel": "general-public-license",                                                                             
+        "StorageThroughput": 0,                                                                                               
+        "OptionGroupMemberships": [                                                                                           
+            {                                                                                                                 
+                "OptionGroupName": "default:mysql-8-4",                                                                       
+                "Status": "in-sync"                                                                                           
+            }                                                                                                                 
+        ],                                                                                                                    
+        "PubliclyAccessible": true,                                                                                           
+        "StorageType": "gp2",                                                                                                 
+        "DbInstancePort": 0,                                                                                                  
+        "StorageEncrypted": false,                                                                                            
+        "DbiResourceId": "db-MT2VXUEJJGQ5JHGSRZVK76WGHM",                                                                     
+        "CACertificateIdentifier": "rds-ca-rsa2048-g1",                                                                       
+        "DomainMemberships": [],                                                                                              
+        "CopyTagsToSnapshot": false,                                                                                          
+        "MonitoringInterval": 0,                                                                                              
+        "DBInstanceArn": "arn:aws:rds:us-east-1:142463041850:db:cine-db",                                                     
+        "IAMDatabaseAuthenticationEnabled": false,                                                                            
+        "DatabaseInsightsMode": "standard",                                                                                   
+        "PerformanceInsightsEnabled": false,                                                                                  
+        "DeletionProtection": false,                                                                                          
+        "AssociatedRoles": [],                                                                                                
+        "TagList": [],                                                                                                        
+        "CustomerOwnedIpEnabled": false,                                                                                      
+        "NetworkType": "IPV4",                                                                                                
+        "BackupTarget": "region",                                                                                             
+        "CertificateDetails": {                                                                                               
+            "CAIdentifier": "rds-ca-rsa2048-g1"                                                                               
+        },                                                                                                                    
+        "DedicatedLogVolume": false,                                                                                          
+        "EngineLifecycleSupport": "open-source-rds-extended-support",                                                         
+        "VPCNetworkingEnabled": true                                                                                          
+    }                                                                                                                         
+}                                                                                                                             
+                                                                                                                              
+PS C:\Users\crais\OneDrive\Escritorio\proyecto cine> 
+PS C:\Users\crais\OneDrive\Escritorio\proyecto cine> aws rds wait db-instance-available --db-instance-identifier cine-db
+>> $rdsHost = aws rds describe-db-instances --db-instance-identifier cine-db --query "DBInstances[0].Endpoint.Address" --output text
+>> Write-Output "Endpoint RDS: $rdsHost"
+Endpoint RDS: cine-db.cctwpudrwbui.us-east-1.rds.amazonaws.com
+PS C:\Users\crais\OneDrive\Escritorio\proyecto cine>
+PS C:\Users\crais\OneDrive\Escritorio\proyecto cine> & 'c:\Users\crais\AppData\Local\Microsoft\WindowsApps\python3.11.exe' '"c:/Users/crais/OneDrive/Escritorio/proyecto cine/proyecto cine.py"'
+PS C:\Users\crais\OneDrive\Escritorio\proyecto cine> & 'c:\Users\crais\AppData\Local\Microsoft\WindowsApps\python3.11.exe' '"c:/Users/crais/OneDrive/Escritorio/proyecto cine/proyecto cine.py"'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\crais\OneDrive\Escritorio\proyecto cine\proyecto cine.py", line 121, in validar_login
+    self.cursor.execute(query, (correo, contraseña))
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\cursor.py", line 617, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 77, in wrapper
+    return method(cnx, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\connection.py", line 843, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\connection.py", line 620, in _handle_result
+    raise get_exception(packet)
+mysql.connector.errors.ProgrammingError: 1146 (42S02): Table 'cine.usuarios' doesn't exist
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\crais\OneDrive\Escritorio\proyecto cine\proyecto cine.py", line 121, in validar_login
+    self.cursor.execute(query, (correo, contraseña))
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\cursor.py", line 617, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 77, in wrapper
+    return method(cnx, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\connection.py", line 843, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\connection.py", line 620, in _handle_result
+    raise get_exception(packet)
+mysql.connector.errors.ProgrammingError: 1146 (42S02): Table 'cine.usuarios' doesn't exist
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\crais\OneDrive\Escritorio\proyecto cine\proyecto cine.py", line 121, in validar_login
+    self.cursor.execute(query, (correo, contraseña))
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\cursor.py", line 617, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 77, in wrapper
+    return method(cnx, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\connection.py", line 843, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\connection.py", line 620, in _handle_result
+    raise get_exception(packet)
+mysql.connector.errors.ProgrammingError: 1146 (42S02): Table 'cine.usuarios' doesn't exist
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\crais\OneDrive\Escritorio\proyecto cine\proyecto cine.py", line 121, in validar_login
+    self.cursor.execute(query, (correo, contraseña))
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\cursor.py", line 617, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 77, in wrapper
+    return method(cnx, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\connection.py", line 843, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\connection.py", line 620, in _handle_result
+    raise get_exception(packet)
+mysql.connector.errors.ProgrammingError: 1146 (42S02): Table 'cine.usuarios' doesn't exist
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\crais\OneDrive\Escritorio\proyecto cine\proyecto cine.py", line 121, in validar_login
+    self.cursor.execute(query, (correo, contraseña))
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\cursor.py", line 617, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 77, in wrapper
+    return method(cnx, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\connection.py", line 843, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\connection.py", line 620, in _handle_result
+    raise get_exception(packet)
+mysql.connector.errors.ProgrammingError: 1146 (42S02): Table 'cine.usuarios' doesn't exist
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\crais\OneDrive\Escritorio\proyecto cine\proyecto cine.py", line 121, in validar_login
+    self.cursor.execute(query, (correo, contraseña))
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\cursor.py", line 617, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 77, in wrapper
+    return method(cnx, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\connection.py", line 843, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\connection.py", line 620, in _handle_result
+    raise get_exception(packet)
+mysql.connector.errors.ProgrammingError: 1146 (42S02): Table 'cine.usuarios' doesn't exist
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\crais\OneDrive\Escritorio\proyecto cine\proyecto cine.py", line 121, in validar_login
+    self.cursor.execute(query, (correo, contraseña))
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\cursor.py", line 617, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 77, in wrapper
+    return method(cnx, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\connection.py", line 843, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\connection.py", line 620, in _handle_result
+    raise get_exception(packet)
+mysql.connector.errors.ProgrammingError: 1146 (42S02): Table 'cine.usuarios' doesn't exist
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\crais\OneDrive\Escritorio\proyecto cine\proyecto cine.py", line 121, in validar_login
+    self.cursor.execute(query, (correo, contraseña))
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\cursor.py", line 617, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 77, in wrapper
+    return method(cnx, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\connection.py", line 843, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\connection.py", line 620, in _handle_result
+    raise get_exception(packet)
+mysql.connector.errors.ProgrammingError: 1146 (42S02): Table 'cine.usuarios' doesn't exist
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\crais\OneDrive\Escritorio\proyecto cine\proyecto cine.py", line 121, in validar_login
+    self.cursor.execute(query, (correo, contraseña))
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\cursor.py", line 617, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 77, in wrapper
+    return method(cnx, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\connection.py", line 843, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\connection.py", line 620, in _handle_result
+    raise get_exception(packet)
+mysql.connector.errors.ProgrammingError: 1146 (42S02): Table 'cine.usuarios' doesn't exist
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\crais\OneDrive\Escritorio\proyecto cine\proyecto cine.py", line 121, in validar_login
+    self.cursor.execute(query, (correo, contraseña))
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\cursor.py", line 617, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 77, in wrapper
+    return method(cnx, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\connection.py", line 843, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\connection.py", line 620, in _handle_result
+    raise get_exception(packet)
+mysql.connector.errors.ProgrammingError: 1146 (42S02): Table 'cine.usuarios' doesn't exist
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "c:\Users\crais\OneDrive\Escritorio\proyecto cine\proyecto cine.py", line 121, in validar_login
+    self.cursor.execute(query, (correo, contraseña))
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\cursor.py", line 617, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 77, in wrapper
+    return method(cnx, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\connection.py", line 843, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\crais\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\mysql\connector\connection.py", line 620, in _handle_result
+    raise get_exception(packet)
+mysql.connector.errors.ProgrammingError: 1146 (42S02): Table 'cine.usuarios' doesn't exist
+PS C:\Users\crais\OneDrive\Escritorio\proyecto cine> mysql -h $rdsHost -P 3306 -u admin -pCineMagic2026! cine < "cine.sql"     
+En línea: 1 Carácter: 58
++ mysql -h $rdsHost -P 3306 -u admin -pCineMagic2026! cine < "cine.sql"
++                                                          ~
+El operador '<' está reservado para uso futuro.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : RedirectionNotSupported
+ 
+PS C:\Users\crais\OneDrive\Escritorio\proyecto cine> $rdsHost = aws rds describe-db-instances --db-instance-identifier cine-db --query "DBInstances[0].Endpoint.Address" --output text
+PS C:\Users\crais\OneDrive\Escritorio\proyecto cine> $rdsHost = aws rds describe-db-instances --db-instance-identifier cine-db --query "DBInstances[0].Endpoint.Address" --output text
+PS C:\Users\crais\OneDrive\Escritorio\proyecto cine> aws rds describe-db-instances --query "DBInstances[].{Id:DBInstanceIdentifier,Status:DBInstanceStatus,Endpoint:Endpoint.Address}" --output table
+----------------------------------------------------------------------------------------                                      
+|                                  DescribeDBInstances                                 |
++--------------------------------------------------------+---------------+-------------+
+|                        Endpoint                        |      Id       |   Status    |
++--------------------------------------------------------+---------------+-------------+
+|  bd-wordpress.cctwpudrwbui.us-east-1.rds.amazonaws.com |  bd-wordpress |  available  ||  cine-db.cctwpudrwbui.us-east-1.rds.amazonaws.com      |  cine-db      |  available  |+--------------------------------------------------------+---------------+-------------+
+
+PS C:\Users\crais\OneDrive\Escritorio\proyecto cine> $rdsHost = aws rds describe-db-instances --db-instance-identifier cine-db --query "DBInstances[0].Endpoint.Address" --output text               
+PS C:\Users\crais\OneDrive\Escritorio\proyecto cine> aws rds describe-events --source-type db-instance --max-records 10 --query "Events[].{Time:Date,Msg:Message}" --output table
+
+aws: [ERROR]: An error occurred (InvalidParameterValue) when calling the DescribeEvents operation: Invalid value 10 for MaxRecords. Must be between 20 and 100
+PS C:\Users\crais\OneDrive\Escritorio\proyecto cine> aws rds describe-db-instances --query "DBInstances[].{Id:DBInstanceIdentifier,Status:DBInstanceStatus,Endpoint:Endpoint.Address}" --output table
+----------------------------------------------------------------------------------------                                      
+|                                  DescribeDBInstances                                 |
++--------------------------------------------------------+---------------+-------------+
+|                        Endpoint                        |      Id       |   Status    |
++--------------------------------------------------------+---------------+-------------+
+|  bd-wordpress.cctwpudrwbui.us-east-1.rds.amazonaws.com |  bd-wordpress |  available  ||  cine-db.cctwpudrwbui.us-east-1.rds.amazonaws.com      |  cine-db      |  available  |+--------------------------------------------------------+---------------+-------------+
+
+PS C:\Users\crais\OneDrive\Escritorio\proyecto cine> aws rds describe-events --source-type db-instance --max-records 20 --query "Events[].{Time:Date,Msg:Message}" --output table
+---------------------------------------------------------------------                                                         
+|                          DescribeEvents                           |
++------------------------------+------------------------------------+
+|              Msg             |               Time                 |
++------------------------------+------------------------------------+
+|  DB instance restarted       |  2026-11-25T22:13:24.275000+00:00  |
+|  DB instance created         |  2026-11-25T22:14:15.075000+00:00  |
+|  Backing up DB instance      |  2026-11-25T22:15:28.840000+00:00  |
+|  Finished DB Instance backup |  2026-11-25T22:18:01.588000+00:00  |
++------------------------------+------------------------------------+
+
+PS C:\Users\crais\OneDrive\Escritorio\proyecto cine> & 'c:\Users\crais\AppData\Local\Microsoft\WindowsApps\python3.11.exe' '"c:/Users/crais/OneDrive/Escritorio/proyecto cine/proyecto cine.py"'
+PS C:\Users\crais\OneDrive\Escritorio\proyecto cine> aws rds describe-events --source-type db-instance --max-records 20 --query "Events[].{Time:Date,Msg:Message}" --output table               
+
+aws: [ERROR]: An error occurred (AccessDenied) when calling the DescribeEvents operation: User: arn:aws:sts::142463041850:assumed-role/voclabs/user4375418=jose.godinez6780@alumnos.udg.mx is not authorized to perform: rds:DescribeEvents with an explicit deny in an identity-based policy: arn:aws:iam::142463041850:policy/voc-cancel-cred
+PS C:\Users\crais\OneDrive\Escritorio\proyecto cine>

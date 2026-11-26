@@ -1,3 +1,4 @@
+se uso el servicio de aurora and RDS para la base de datos, iniciando desde la subida de el proyecto a github, hastá la implementacion de los scrips de el levantamiento y uso de RDS con errores y el como se solucionaron:
 irm https://awscli.amazonaws.com/v2/install.ps1 | iex                                           Installing AWS CLI 2.42.4                                                                                               Downloading AWS CLI installer from https://awscli.amazonaws.com/AWSCLIV2-User-2.42.4.msi?src=script-exe                 MSI Authenticode signature verified (signed by AWS).
 Running MSI installer...
 AWS CLI 2.42.4 installed to C:\Users\crais\AppData\Local\Programs\Amazon\AWSCLIV2
